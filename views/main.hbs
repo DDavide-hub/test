@@ -1,7 +1,8 @@
 {{!-- {{> partialname}} indica il file da cui vogliamo prendere il codice da aggiungere a qeusto file --}}
-{{> lovedChamps}}
-{{> hatedChamps}}
-{{#if listExists}} 
+{{> lovedBerserk}}
+{{> hatedAtreus}}
+{{#if listExist}}
+    <p>If you like LOL, there're some suggested Champs:</p> 
     <ul>
         {{#each suggestedChamps}}
         <li class={{this.lane}}>{{this.name}}</li>

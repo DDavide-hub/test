@@ -8,4 +8,12 @@ li {
 
 .midlaner {background-color: #eeeeee}
 
-.toplaner {background-color: #ffea00}
+.toplaner, .op {background-color: #ffea00}
+
+.trash, .loli {background-color: hotpink}
+
+.piro {background-color: red}
+
+.rip, .infamone{background-color: black; color: white}
+
+.crazy {background-color: grey}

@@ -1,3 +1,4 @@
+"use strict"
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -14,13 +15,13 @@ layoutsDir: __dirname + '/views/layouts',
 //new extention name for handlebars
 extname: 'hbs',
 //non c'è bisogno di specificare il layout, in caso il layout base sarà planB
-defaultLayout: 'planB',
-partialsDir: __dirname + '/views/partials/'
+defaultLayout: 'planC',
+partialsDir: __dirname + '/views/partials/' /*__dirname = directory attuale */
 }));
 
 app.use(express.static('public'));
 
-fakeApi = () => {
+const fakeApi = () => {
     return [
         {
             name: 'Katarina',
@@ -43,11 +44,11 @@ fakeApi = () => {
             lane: 'midlaner'
         }
     ];
-}
+};
 
 app.get('/', (req, res) => {
 //Serves the body of the page aka "main.handlebars" to the container //aka "index.handlebars"
-res.render('main', {layout: 'index', suggesyedChamps = fakeApi(), listExist: true});
+res.render('main', {layout: 'index', suggestedChamps: fakeApi(), listExist: true});
 });
 
 app.listen(port, () => console.log(`App listening to port ${port}`));
