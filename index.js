@@ -33,7 +33,6 @@ app.get("/", (req, res) => {
 app.get("/page1", (req, res) => {
     const headers = req.headers;
     const connection = headers.connection;
-    console.log(connection);
     res.render("main", {connection, headers});
 });
 
