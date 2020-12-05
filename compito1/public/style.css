@@ -1,0 +1,19 @@
+li {
+    font-size: 2rem;
+    width: 300px;
+    margin: 4px;
+    padding: 4px;
+    list-style: none
+}
+
+.midlaner {background-color: #eeeeee}
+
+.toplaner, .op {background-color: #ffea00}
+
+.trash, .loli {background-color: hotpink}
+
+.piro {background-color: red}
+
+.rip, .infamone{background-color: black; color: white}
+
+.crazy {background-color: grey}
